@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - AURA</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="download-container">
+        <button onclick="window.print()" class="download-btn"><i class="fas fa-file-pdf"></i> Download sebagai PDF</button>
+    </div>
+
+    <div class="cv-container">
+        <aside class="sidebar">
+                <div class="profile-pic-container"><img src="img/profile.jpeg" alt="Foto Profil" class="profile-pic"></div>
+            <section id="kontak" class="fade-in-section">
+                <h3>Kontak</h3>
+                <div class="kontak">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:nama.contoh@example.com">auraaaajaaaloh@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+6280000000000">+62 813-6183-8806</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Komplek rorinata tahap 9, Kota Medan, Provinsi Sumatera Utara</p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/nama-contoh" target="_blank" rel="noopener noreferrer">linkedin.com/in/aura</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/example" target="_blank" rel="noopener noreferrer">github.com/aura</a></p>
+                    <p><i class="fas fa-graduation-cap"></i> <a href="#" target="_blank" rel="noopener noreferrer">SMK SULTAN ISKANDAR MUDA</a></p>
+                </div>
+            </section>
+            <section id="keterampilan" class="fade-in-section">
+                <h3>Keterampilan</h3>
+                <h4>Microsoft Office</h4><ul class="keterampilan-list"><li>MS Word</li><li>MS Excel</li><li>MS PowerPoint</li></ul>
+                <h4>Alat & Lainnya</h4><ul class="keterampilan-list"><li>Capcut</li><li>Canva</li><li>MySQL</li></ul>
+            </section>
+            <section id="bahasa" class="fade-in-section">
+                <h3>Bahasa</h3>
+                <ul class="list-unstyled">
+                    <li><strong>Bahasa Indonesia</strong></li>
+                    <li><strong>Bahasa Inggris</strong></li>
+                </ul>
+            </section>
+            <section id="verifikasi" class="fade-in-section qr-code-container">
+                <h3>Verifikasi Online</h3>
+                <div id="qrcode"></div>
+                <p>Pindai untuk melihat versi CV online yang interaktif.</p>
+            </section>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1>Aura</h1>
+                <p class="jabatan">Mahasiswa</p>
+            </header>
+            <section id="tentang" class="fade-in-section">
+                <h2><i class="fas fa-user-tie"></i> Profil Profesional</h2>
+                <p>Mahasiswa S1 Bisnis Digital yang memiliki ketertarikan di bidang Conten Creator. Saya memiliki pengalaman sebagai Conten Creator di Studio Foto, saya telah mengasah keterampilan komunikasi, kedisiplinan, serta kemampuan bekerja sama dalam tim. Selain itu, saya memiliki tujuan untuk mengembangkan keterampilan visual dari berbagai aspek lingkungan kerja profesional.</p>
+            </section>
+            <section id="pengalaman" class="timeline-section fade-in-section">
+                <h2><i class="fas fa-briefcase"></i> Pengalaman Kerja</h2>
+                <div class="item"><h3>Conten creator/editing (Mirai Studio)</h3><p class="info">MIRAI STUDIO | Des 2023 – Jan 2024</p><ul><li>Mengatur strategi konten instagram, Editing Foto Customer, serta membantu customer dalam pengarahan foto.</li><li>Dan berkoordinasi dengan pihak internal dan eksternal untuk Studio Foto.</li></ul></div>
+                <div class="item"><h3>Staff Finance / Kasir</h3><p class="info">PT KREASI SAUDARA KREATIF | Juni 2025 – Sekarang</p><ul><li>Mengelola dan mencatat seluruh transaksi harian, menjaga keseimbangan kas, serta membuat laporan keuangan sederhana untuk memastikan tidak terjadi selisih.</li><li>Melayani proses transaksi pembayaran pelanggan dengan cepat dan akurat, termasuk menerima uang tunai maupun non-tunai serta memberikan kembalian dengan tepat.</li></ul></div>
+            </section>
+            <section id="pendidikan" class="timeline-section fade-in-section">
+                <h2><i class="fas fa-graduation-cap"></i> Pendidikan</h2>
+                <div class="item"><h3>SMK SULTAN ISKANDAR MUDA</h3><p class="info">Jurusan DESAIN KOMUNIKASI VISUAL · Lulus 2024</p></div>
+                <div class="item"><h3>Universitas Satya Terra Bhinneka</h3><p class="info">S1 Bisnis Digital · Sekarang</p></div>
+            </section>
+            <section id="pencapaian" class="fade-in-section">
+                <h2><i class="fas fa-star"></i> Keterampilan</h2>
+                <ul class="list-unstyled achievements-list">
+                    <li><strong>Microsoft Office (Word, Excel, PowerPoint)</strong></li>
+                    <li><strong>Pengolahan dan input data</strong></li>
+                    <li><strong>Editing video/strong></li>
+                    <li><strong>Pengoperasian sistem kasir (POS)</strong></li>
+                    <li><strong>Storyboard</strong></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <div id="image-preview-modal" class="modal-overlay">
+        <span class="modal-close-btn">&times;</span>
+        <img class="modal-content-image" id="modal-image">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageModal = document.getElementById('image-preview-modal');
+            const modalImage = document.getElementById('modal-image');
+            
+            // Logika untuk Modal Preview Gambar Sertifikat
+            const certItems = document.querySelectorAll('#sertifikasi .list-unstyled li');
+            certItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const imageSrc = item.getAttribute('data-image');
+                    if (imageSrc) {
+                        modalImage.src = imageSrc;
+                        imageModal.style.display = 'flex';
+                    }
+                });
+            });
+
+            // Fungsi untuk menutup modal gambar
+            function closeImageModal() {
+                imageModal.style.display = 'none';
+            }
+
+            // Tambahkan event listener ke tombol close modal gambar
+            imageModal.querySelector('.modal-close-btn').addEventListener('click', closeImageModal);
+
+            // Tambahkan event listener untuk klik di luar gambar
+            imageModal.addEventListener('click', (event) => {
+                if (event.target === imageModal) {
+                    closeImageModal();
+                }
+            });
+            
+            // Tambahkan event listener untuk tombol 'Escape'
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && imageModal.style.display === 'flex') {
+                    closeImageModal();
+                }
+            });
+
+            // Logika untuk Animasi Scroll & Kode QR
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.fade-in-section').forEach(section => { observer.observe(section); });
+
+            const qrCodeElement = document.getElementById("qrcode");
+            if(qrCodeElement) {
+                new QRCode(qrCodeElement, {
+                    text: window.location.href,
+                    width: 120,
+                    height: 120,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
